@@ -2,16 +2,16 @@ package hw1
 
 import org.scalatest.FunSuite
 
-import Main.encode
+import Main.findPrimes
 
-class EncodeTest extends FunSuite {
+class FindPrimesTest extends FunSuite {
 
   test("Find primes 1") {
-      assert(findPrimes(1) == Set())
+      assert(findPrimes(1) === Set())
   }
 
   test("Find primes 10") {
-      assert(findPrimes(10) == Set(2,3,5,7))
+      assert(findPrimes(10) === Set(2,3,5,7))
   }
 
 

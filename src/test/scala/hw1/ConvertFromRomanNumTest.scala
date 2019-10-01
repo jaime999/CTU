@@ -2,16 +2,16 @@ package hw1
 
 import org.scalatest.FunSuite
 
-import Main.pascalTriangleRowSum
+import Main.convertFromRomanNum
 
 class ConvertFromRomanNumTest extends FunSuite {
 
   test("I") {
-    assert(convertFromRomanNum("I") == 1)
+    assert(convertFromRomanNum("I") === 1)
   }
 
   test("IV") {
-    assert(convertFromRomanNum("IV") == 4)
+    assert(convertFromRomanNum("IV") === 4)
   }
 
   test("Gibberish"){

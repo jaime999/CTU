@@ -2,20 +2,20 @@ package hw1
 
 import org.scalatest.FunSuite
 
-import Main.coinChange
+import Main.levensteinDistance
 
-class CoinChangeTest extends FunSuite {
+class LevensteinDistanceTest extends FunSuite {
 
   test("ola ala") {
-    assert(distance("ola", "ala") == 1)
+    assert(levensteinDistance("ola", "ala") === 1)
   }
 
   test("hello ehllo") {
-    assert(distance("hello", "ehllo") == 2)
+    assert(levensteinDistance("hello", "ehllo") === 2)
   }
 
   test(" ehllo") {
-    assert(distance("sittin", "sitting") == 1)
+    assert(levensteinDistance("sittin", "sitting") === 1)
   }
 
 }
